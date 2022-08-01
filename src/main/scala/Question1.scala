@@ -1,9 +1,9 @@
 object Question1 {
   def interest(deposit: Float) : Float = deposit match {
-    case deposite if deposite <= 20000.00f => deposite * 0.02f
-    case deposite if deposite <= 200000.00f => deposite * 0.04f
-    case deposite if deposite <= 2000000.00f => deposite * 0.035f
-    case deposite if deposite >= 2000000.00f => deposite * 0.065f
+    case deposit if deposit <= 20000.00f => deposit * 0.02f
+    case deposit if deposit <= 200000.00f => deposit * 0.04f
+    case deposit if deposit <= 2000000.00f => deposit * 0.035f
+    case deposit if deposit > 2000000.00f => deposit * 0.065f
   }
 
   def main(args: Array[String]): Unit = {
